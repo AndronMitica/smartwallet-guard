@@ -1,0 +1,149 @@
+/* Dashboard.css optimizat pentru tema light/dark și layout responsive */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+    background: linear-gradient(to right, #ddefff, #e2f5ff);
+    color: #000;
+}
+
+body.dark {
+    background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+    color: #fff;
+}
+
+.dashboard-container {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-container.light {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.dashboard-container.dark {
+    background-color: rgba(34, 34, 34, 0.9);
+    color: #fff;
+}
+
+.dashboard-container input,
+.dashboard-container select,
+.dashboard-container button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.dashboard-container.dark input,
+.dashboard-container.dark select,
+.dashboard-container.dark button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dashboard-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dashboard-container li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(200, 200, 200, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container.dark li {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.profile-popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 250px;
+}
+
+body.dark .profile-popup {
+    background: #333;
+    color: #fff;
+}
+
+body.light .profile-popup {
+    background: #fff;
+    color: #000;
+}
+
+.profile-popup button {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.profile-popup input {
+    margin-top: 8px;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: inherit;
+    color: inherit;
+}
+
+.filters-export-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .filters,
+  .exports {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filters select,
+  .exports button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    background-color: #eee;
+  }
+  
+  body.dark .filters select,
+  body.dark .exports button {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+  
