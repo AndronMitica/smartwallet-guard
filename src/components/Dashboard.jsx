@@ -1,5 +1,3 @@
-// Dashboard.jsx complet actualizat cu profil extins (vizualizare + link editare)
-
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth, db } from "../firebase/config";
@@ -422,5 +420,6 @@ function Dashboard() {
         </div>
     );
 }
+
 
 export default Dashboard;
